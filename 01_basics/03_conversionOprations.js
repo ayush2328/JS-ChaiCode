@@ -35,10 +35,10 @@ undefined -> false
 */
 
 // <-----------"Conversion to String"------------>
-let someNumber = undefined;
-let stringNumber = String(someNumber);
-console.log(stringNumber);
-console.log(typeof (stringNumber));
+// let someNumber = undefined;
+// let stringNumber = String(someNumber);
+// console.log(stringNumber);
+// console.log(typeof (stringNumber));
 
 /*
 33 -> 33
@@ -47,3 +47,14 @@ if u write any thing it convert in string it means in double or single quots
 */
 
 // <-----------"Conversion to Object"------------>
+let someValue = false;
+let objectValue = Object(someValue);
+console.log(objectValue);
+console.log(typeof (someValue));
+
+/* 
+    33 -> [Number: 33]
+    Ayush -> [String: 'Ayush']
+    true / false -> [Boolean: true/false]
+    null/undefined  -> {}
+*/
